@@ -1,0 +1,40 @@
+
+/* CUSTOM CSS */
+
+.sidenavr {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #272c33;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenavr .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+    margin-left: px;
+}
+.sidenavr a:hover {
+    color: #f1f1f1;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}

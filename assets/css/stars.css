@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+}
+
+.material-icons {
+  color: #f1c40f;
+  font-size: 40px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+input[type=radio] + label {
+  cursor: pointer;
+}
+
+input[type=radio] + label i.star-empty, input[type=radio]:checked + label i.star-checked, input[type=radio]:checked ~ input[type=radio] + label i.star-checked {
+  display: inline-block;
+}
+
+input[type=radio] + label i.star-checked, input[type=radio]:checked + label i.star-empty, input[type=radio]:checked ~ input[type=radio] + label i.star-empty {
+  display: none;
+}

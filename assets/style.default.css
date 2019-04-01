@@ -1,0 +1,132 @@
+span {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+span:hover,
+span:focus {
+  text-decoration: none;
+}
+
+
+canvas {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-fluid {
+  padding: 0 30px;
+}
+
+@media (max-width: 575px) {
+  .container-fluid {
+    padding: 0 15px;
+  }
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+.no-padding-top {
+  padding-top: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+.no-margin-top {
+  margin-top: 0 !important;
+}
+
+.page {
+  overflow-x: hidden;
+}
+
+.has-shadow {
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -1px 0 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -1px 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.badge {
+  font-weight: 400;
+}
+
+.badge-rounded {
+  border-radius: 50px;
+}
+/*
+* ==========================================================
+*     DASHBOARD COUNTS SECTION
+* ==========================================================
+*/
+section.dashboard-counts .icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  min-width: 40px;
+  max-width: 40px;
+  border-radius: 50%;
+}
+
+section.dashboard-counts .title {
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #777;
+  margin: 0 20px;
+}
+
+section.dashboard-counts .progress {
+  margin-top: 10px;
+  height: 4px;
+}
+
+section.dashboard-counts .number {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
+section.dashboard-counts .number strong {
+  font-weight: 700;
+}
+
+section.dashboard-counts .row {
+  padding: 30px 15px;
+  margin: 0;
+}
+
+section.dashboard-counts div[class*='col-'] .item {
+  border-right: 1px solid #eee;
+  padding: 15px 0;
+}
+
+section.dashboard-counts div[class*='col-']:last-of-type .item {
+  border-right: none;
+}
+
+/*  DASHBOARD COUNTS MEDIAQUERIES ------------------------ */
+@media (max-width: 1199px) {
+  section.dashboard-counts div[class*='col-']:nth-of-type(2) .item {
+    border-right: none;
+  }
+}
+
+@media (max-width: 575px) {
+  section.dashboard-counts div[class*='col-'] .item {
+    border-right: none;
+  }
+}
